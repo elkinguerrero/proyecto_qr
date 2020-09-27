@@ -1,0 +1,1 @@
+las imagenes se guardan en esta carpeta
