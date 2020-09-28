@@ -11,6 +11,15 @@ function Guardar_formulario(){
     //id no se pide en el formulario por lo que se deja vacia
     id = 1;
 
+    if(contrato="null" || contratol == null){
+        contrato = document.getElementById('id_contrato').value;
+    }
+
+    if(fecha == ''){
+        alert("debe seleccionar una fecha")
+        return;
+    }
+
     var respuesta = new XMLHttpRequest();
     respuesta.onreadystatechange = function() {};
     respuesta.open("POST", "php/guardar_texto.php", false);

@@ -13,10 +13,10 @@
         $fichero_subido = $dir_subida . $_SESSION['max'] . $i . '_img_' . '.'.$separar;
 
         if($texto_1 == ''){
-            $texto_1 .= $_SESSION['max'] . $i . '_img_' . '.'.$separar;
+            $texto_1 .= $_SESSION['max'] .'_'. $i . '_img' . '.'.$separar;
         }
         else{
-            $texto_1 .= ',' . $_SESSION['max'] . $i . '_img_' . '.'.$separar;    
+            $texto_1 .= ',' . $_SESSION['max'] .'_'. $i . '_img' . '.'.$separar;
         }
 
         echo '<br><br>'.'<pre>';
@@ -32,8 +32,8 @@
     $dir_subida = '../img/';
     $separar = explode(".", $_FILES['contrato']['name']);
     $separar = $separar[count($separar)-1];
-    $fichero_subido = $dir_subida . $_SESSION['max'] . '_contrato_' . '.'.$separar;
-    $texto_2 .= $_SESSION['max'] . '_contrato_' . '.'.$separar;
+    $fichero_subido = $dir_subida . $_SESSION['max'] . '_contrato' . '.'.$separar;
+    $texto_2 .= $_SESSION['max'] . '_contrato' . '.'.$separar;
 
 
     echo '<br><br>'.'<pre>';
